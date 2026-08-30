@@ -227,8 +227,6 @@ body{
 .v-row .lbl{color:var(--ink-soft);font-size:12px;letter-spacing:1px}
 .v-row .val{color:var(--ink);font-weight:600}
 .v-row .val.mono{font-family:"SF Mono",Menlo,Consolas,monospace;letter-spacing:1px;color:var(--rose);font-size:13px}
-.v-foot{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:16px;font-size:11px;color:var(--ink-soft);letter-spacing:2px}
-.v-foot b{color:var(--gold);font-weight:400}
 
 /* ============ 场景4 祝福 ============ */
 #s4{justify-content:center;padding-top:calc(env(safe-area-inset-top) + 24px)}
@@ -260,7 +258,7 @@ body{
 /* ============ 场景5 收束 ============ */
 #s5 .end{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;gap:22px;text-align:center}
 .heart{width:62px;height:58px;position:relative;animation:beat 1.6s ease-in-out infinite}
-.heart::before,.heart::after{content:"";position:absolute;width:31px;height:48px;border-radius:31px 31px 0 0;background:linear-gradient(180deg,var(--rose-soft),var(--rose))}
+.heart::before,.heart::after{content:"";position:absolute;width:31px;height:48px;border-radius:31px 31px 0 0;background:var(--rose)}
 .heart::before{left:31px;transform:rotate(-45deg);transform-origin:0 100%}
 .heart::after{left:0;transform:rotate(45deg);transform-origin:100% 100%}
 @keyframes beat{0%,100%{transform:scale(1)}15%{transform:scale(1.16)}30%{transform:scale(1)}45%{transform:scale(1.1)}60%{transform:scale(1)}}
@@ -314,7 +312,7 @@ body{
         <div class="an-product">华为 Mate 90 Pro Max</div>
         <div class="an-date">9 月底 · 正式发布</div>
         <div class="an-divider"></div>
-        <p class="an-note">实物将在正式发售后第一时间下单<br>刚发给您的红包，是给您备好的手机钱<br>这份心意，请您先收下</p>
+        <p class="an-note">实物将在正式发售后第一时间下单<br>刚发给您的红包，是给您备好的购机款<br>这份心意，请您先收下</p>
       </div>
     </div>
   </section>
@@ -337,7 +335,6 @@ body{
           <div class="v-row"><span class="lbl">凭证编号</span><span class="val mono">MOM·0901·2026</span></div>
         </div>
       </div>
-      <div class="v-foot">凭此券提领 · 仅此一份</div>
     </div>
   </section>
 
