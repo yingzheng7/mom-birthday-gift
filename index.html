@@ -235,7 +235,7 @@ body{
   font-size:17px;line-height:2.05;color:var(--ink);letter-spacing:.5px;
   opacity:0;transform:translateY(13px);text-wrap:balance;
 }
-.line.hl{font-size:18px;color:var(--rose);font-weight:500;margin:5px 0}
+.line.hl{font-size:clamp(13.5px,4.2vw,17px);letter-spacing:0;color:var(--rose);font-weight:500;margin:5px 0}
 .line.hl.typing::after{
   content:"";display:inline-block;width:2px;height:.95em;background:var(--rose);
   margin-left:3px;vertical-align:-1px;animation:blink 1s step-end infinite;
@@ -249,10 +249,8 @@ body{
 #s4.in-view .line.l5{animation-delay:2.9s}
 #s4.in-view .line.l6{animation-delay:3.6s}
 #s4.in-view .line.l7{animation-delay:4.3s}
-#s4.in-view .line.hl{animation-delay:5.0s}
-#s4.in-view .line.l9{animation-delay:7.4s}
-#s4.in-view .line.l10{animation-delay:8.1s}
-#s4.in-view .line.sig{animation-delay:8.9s}
+#s4.in-view .line.hl{animation-delay:4.4s}
+#s4.in-view .line.l9{animation-delay:7.2s;margin-top:18px}
 @keyframes blink{50%{opacity:0}}
 
 /* ============ 场景5 收束 ============ */
@@ -343,17 +341,14 @@ body{
     <div class="glow"><span></span><span></span><span></span></div>
     <div class="petals" id="driftField"></div>
     <div class="blessing">
-      <p class="line l1">亲爱的妈妈，您辛苦了一辈子。</p>
-      <p class="line l2">您把最好的，都留给了这个家——</p>
-      <p class="line l3">一日三餐，寒来暑往，</p>
-      <p class="line l4">还有我长大的每一步，都有您在。</p>
-      <p class="line l5">今年您退休了，往后，请多疼疼自己。</p>
-      <p class="line l6">想去远方，我们就出发；</p>
-      <p class="line l7">想在家养花、散步、见见老朋友，也都好。</p>
+      <p class="line l1">亲爱的妈妈，</p>
+      <p class="line l2">恭喜您迎来退休后的第一个生日！</p>
+      <p class="line l3">愿您卸下往日忙碌，</p>
+      <p class="line l4">尽情去奔赴心里向往的远方，</p>
+      <p class="line l5">多出去走走，看看广阔的大千世界。</p>
+      <p class="line l6">我和爸爸会一直陪伴在您左右。</p>
       <p class="line hl" id="tw"></p>
-      <p class="line l9">这份礼物，是想陪着您，把日子过成喜欢的样子。</p>
-      <p class="line l10">妈妈，生日快乐！</p>
-      <p class="line sig kai">—— 爱你的儿子</p>
+      <p class="line l9">儿子祝您生日快乐！</p>
     </div>
   </section>
 
@@ -462,7 +457,7 @@ body{
       if(ti<=full.length){ tw.textContent=full.slice(0,ti); ti++; setTimeout(step,85); }
       else { tw.classList.remove('typing'); }
     };
-    setTimeout(step,5600);
+    setTimeout(step,5000);
   }
 
   /* 场景4 飘落花瓣 */
